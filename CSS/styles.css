@@ -1,0 +1,64 @@
+body {
+  margin: 0px;
+  font-family: Arial;
+  background-image: url(https://i9.ytimg.com/vi/o0hDjGQqBbA/mqdefault.jpg?v=65d0cca4&sqp=CJSa8b4G&rs=AOn4CLD86vOfz8RIqLz6WDaaqF4IVjC2vQ); 
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  background-color: #1414DC;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  height: 100px;
+}
+
+.title {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: lime;
+}
+
+.about {
+  display:block;
+  position: absolute;
+  margin-top: 125px;
+  background-color: rgba(0, 255, 0, 0.25);
+  width: 75%;
+  margin-left: 100px;
+}
+
+.about_text {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  margin-bottom: 18px;
+  margin-left: 10px;
+  color: black;
+}
+
+.link_container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: purple;
+}
