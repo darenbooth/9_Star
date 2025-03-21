@@ -75,3 +75,44 @@ a {
 a:hover {
   color: purple;
 }
+
+@media(max-width: 700px) {
+  .header {
+    height: 50px
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-weight: 900;
+  }
+
+  h2 {
+    font-weight: 900;
+  }
+
+  .about_text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .about {
+    margin: 75px auto;
+  }
+
+  .footer {
+    height: 50px;
+  }
+
+  .link_container {
+    font-size: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
