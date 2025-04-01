@@ -29,13 +29,40 @@ body {
   color: lime;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+  position: fixed;
+  left: 0;
+  bottom: 35px;
+  top: 100px;
+  width: 100px;
+  background-color: rgba(20, 20, 220, 0.5);
+}
+
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   left: 0;
   bottom: 0;
   right: 0;
-  height: 100px;
-  background-color: blue;
+  height: 20px;
+  background-color: rgba(0, 255, 0, 1);
+  padding: 8px;
+  font-weight: bold;
+}
+
+.paylink {
+  color: red;
+}
+
+.paylink:hover {
+  color:purple;
 }
 
 .about {
@@ -45,6 +72,10 @@ body {
   padding-bottom: 25px;
   background-color: rgba(0, 0, 0, 0.75);
   width: 75%;
+}
+
+main {
+  padding-left: 100px;
 }
 
 h1 {
@@ -59,21 +90,14 @@ h1 {
   color: white;
 }
 
-.link_container {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: flex;
-  justify-content: space-around;
-}
-
 a {
-  color: white;
+  color: lime;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: purple;
+  color: white;
 }
 
 @media(max-width: 700px) {
@@ -87,6 +111,11 @@ a:hover {
 
   .title {
     font-size: 20px;
+  }
+
+  .sidebar {
+    top: 50px;
+    bottom: 35px;
   }
 
   h1 {
@@ -104,15 +133,5 @@ a:hover {
 
   .about {
     margin: 75px auto;
-  }
-
-  .footer {
-    height: 50px;
-  }
-
-  .link_container {
-    font-size: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
   }
 }
